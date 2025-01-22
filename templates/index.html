@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My IP Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .info {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .info span {
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My IP Checker</h1>
+    </header>
+    <div class="container">
+        <h2>Your Network Information</h2>
+        <div class="info">
+            <p><span>WAN IP Address:</span> {{ ip }}</p>
+            <p><span>Country:</span> {{ country }}</p>
+            <p><span>ISP:</span> {{ isp }}</p>
+        </div>
+        <h2>Interesting Info About Your Browser</h2>
+        <div class="info">
+            <p><span>User Agent:</span> {{ user_agent }}</p>
+        </div>
+        <footer>
+            <p>Powered by Your IP Checker</p>
+        </footer>
+    </div>
+</body>
+</html>
